@@ -29,9 +29,17 @@ Automated audit tool that checks the general health of any webpage.
 
 ---
 
+### LoginCheck_AutoReport.py — Login Test with Auto Excel Report
+Advanced login form validator that tests each UI element individually
+and generates a formatted Excel report automatically.
+
+**What it does:**
+- Validates each login element separately (username, password, button)
+- Exports results to a color-coded Excel file (green = PASSED, red = FAILED)
+- Handles 3 result states: PASSED, FAILED, and CRITICAL
+- Appends new results to the same report on each run (historical log)
 ## Tech Stack
 
-| Tools |
 | Python | 
 | Selenium WebDriver |
 | webdriver-manager |
@@ -40,7 +48,7 @@ Automated audit tool that checks the general health of any webpage.
 
 ## Installation
 pip install selenium webdriver-manager
-
+pip install pandas openpyxl
 
 ## Author
 
