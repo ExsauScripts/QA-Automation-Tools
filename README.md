@@ -9,10 +9,28 @@ Automated UI audit for any website. Verifies:
 - Key HTML elements count
 - Overall page status report
 
-### Technologies
-- Python 3
+### Tech stack
+- Python
 - Selenium
 - WebDriver Manager (auto-installs ChromeDriver)
+
+### Installation
+pip install selenium webdriver-manager
+
+# Selenium Login Form Test
+
+Automated test for a login form using Selenium WebDriver and Python.
+
+## What it does
+- Opens a real website with a login form
+- Fills in the username and password fields automatically
+- Clicks the submit button
+- Validates that the correct error message appears for invalid credentials
+
+## Tech stack
+- Python
+- Selenium WebDriver
+- webdriver-manager (auto-installs ChromeDriver)
 
 ### Installation
 pip install selenium webdriver-manager
