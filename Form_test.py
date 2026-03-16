@@ -14,7 +14,7 @@ def test_formulario_contacto():
         print("Navegador abierto en la zona de pruebas")
 
         #Encontrar campos por NAME o ID y escribir (Simulando ser un usuario)
-        #En esta web los campos se llaman "username" y "password"
+        #En esta web los IDs son "user_login" y "user_pass"
         user_input = driver.find_element(By.ID, "user_login")
         pass_input = driver.find_element(By.ID, "user_pass")
 
@@ -23,16 +23,16 @@ def test_formulario_contacto():
         print("Campos completados automaticamente")
 
         #Simular el click en el boton de login
-        #Buscamos el boton por su tag "button" y su tipo "submit"
+        #Buscamos el boton su tipo "submit"
         boton_login = driver.find_element(By.CSS_SELECTOR, "input[type='submit']")
         boton_login.click()
         print("Click en el boton de ingresar")
 
         #VALIDACION
+        #Le damos tiempo a que cargue
+        time.sleep(2) 
         #Verificamos si aparecio el mensaje de exito
-        time.sleep(2) #Le damos tiempo a que cargue
         mensaje_error = driver.find_element(By.CSS_SELECTOR, "div.pmpro_message").text
-        
         if "no está registrado en este sitio" in mensaje_error:
             print("Mensaje de error detectado correctamente (La pagina detecto que el usuario no existe)")
         else:
