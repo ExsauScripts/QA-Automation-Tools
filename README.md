@@ -1,39 +1,48 @@
-# QA Automation Tools 
-Automation scripts for UI quality assurance using Python and Selenium.
+# QA Automation Tools
 
-## Health Check (`Health_check.py`)
-Automated UI audit for any website. Verifies:
-- Page load time
-- Page title detection
-- Specific text search on page
-- Key HTML elements count
-- Overall page status report
+Python scripts for automated UI testing and web quality assurance.
 
-### Tech stack
-- Python
-- Selenium
-- WebDriver Manager (auto-installs ChromeDriver)
+---
 
-### Installation
-pip install selenium webdriver-manager
+## Scripts
 
-# Selenium Login Form Test
+### Form_test.py — Login Form Validation
+Tests a login form end-to-end by simulating a real user interaction.
 
-Automated test for a login form using Selenium WebDriver and Python.
-
-## What it does
-- Opens a real website with a login form
-- Fills in the username and password fields automatically
+**What it does:**
+- Opens a login page in Chrome automatically
+- Fills in username and password fields
 - Clicks the submit button
 - Validates that the correct error message appears for invalid credentials
 
-## Tech stack
-- Python
-- Selenium WebDriver
-- webdriver-manager (auto-installs ChromeDriver)
+---
 
-### Installation
+### Health_check.py — UI Health Audit
+Automated audit tool that checks the general health of any webpage.
+
+**What it does:**
+- Measures page load time
+- Detects the page title
+- Searches for specific text on the page
+- Counts key HTML elements
+- Generates a full status report
+
+---
+
+## Tech Stack
+
+| Tools |
+| Python | 
+| Selenium WebDriver |
+| webdriver-manager |
+
+---
+
+## Installation
 pip install selenium webdriver-manager
 
-### Author
-Oscar Santos — QA Tester & Python Developer
+
+## Author
+
+**Oscar Santos** — QA Tester & Python Developer  
+[LinkedIn](https://linkedin.com/in/oscar-santos-9a9a64389) · [Fiverr](https://www.fiverr.com/exsauscripts)
